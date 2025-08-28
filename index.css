@@ -1,0 +1,103 @@
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    /* fr=fraktion itu satuan untuk ruangan */
+    grid-template-rows: 2fr 5fr 4fr ;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.p1{
+    background-color: red;
+}
+
+.p2{
+    background-color: yellow;
+}
+
+.p3{
+    background-color: green;
+}
+
+.p4{
+    background-color: orange;
+}
+
+.p5{
+    background-color: blue;
+}
+
+.container-grid2{
+    display: grid;
+    grid-template-areas: "header header header" "utama kanan1 kanan1" 
+    "utama kanan2 kanan2" "utama kanan3 kanan3" ;
+    margin-top: 100px;
+    gap: 10px;
+    
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    height: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.utama{
+    grid-area: utama;
+    text-align: center;
+    padding: 20px;
+    border-radius: ;
+}
+   
+
+.kanan1{
+    grid-area: kanan1;
+    text-align: center;
+}
+
+.kanan2{
+    grid-area: kanan2;
+    text-align: center;
+}
+
+.kanan3{
+    grid-area: kanan3;
+    text-align: center;
+}
+
+.wrap-3{
+    display: grid;
+    grid-template-areas: "atas kanan" "bawah kanan";
+    column-gap: 10px;
+    row-gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shell{
+grid-area: atas;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+background-color: aqua;
+}
+
+.hero{
+grid-area: kanan;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+background-color: yellow;
+}
+
+.footer{
+grid-area: bawah;
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+background-color: red;
+}
